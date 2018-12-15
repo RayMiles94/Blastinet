@@ -31,22 +31,22 @@
         <activity
             android:name=".Contact"
             android:label="@string/title_activity_contact"
-            android:theme="@style/AppTheme.NoActionBar">
+            >
         </activity>
         <activity
             android:name=".Calendier"
             android:label="@string/title_activity_calendier"
-            android:theme="@style/AppTheme.NoActionBar">
+            >
         </activity>
         <activity
             android:name=".CreateAccount"
             android:label="@string/title_activity_create_account"
-            android:theme="@style/AppTheme.NoActionBar">
+            >
         </activity>
         <activity
             android:name=".Concerts"
             android:label="@string/title_activity_concerts"
-            android:theme="@style/AppTheme.NoActionBar">
+            >
         </activity>
     </application>
 
