@@ -42,6 +42,8 @@
         </activity>
         <activity android:name=".concert">
         </activity>
+        <activity android:name=".festival">
+        </activity>
     </application>
 
 </manifest>
