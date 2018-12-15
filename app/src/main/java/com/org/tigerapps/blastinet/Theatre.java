@@ -8,7 +8,7 @@ import android.widget.Spinner;
 
 public class Theatre extends AppCompatActivity {
 
-    Spinner sp1,sp2;
+    Spinner sp1,sp2,jour,mois,annee;
     EditText champ1;
 
 
@@ -26,5 +26,13 @@ public class Theatre extends AppCompatActivity {
         ArrayAdapter<String> adpater2 = new ArrayAdapter<String>(Theatre.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.array_theatre2));
         adpater2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sp2.setAdapter(adpater2);
+        Spinner jour= (Spinner) findViewById(R.id.jour);
+        Spinner mois= (Spinner) findViewById(R.id.mois);
+        Spinner annee= (Spinner) findViewById(R.id.annee);
+
+        ArrayAdapter<String> adpater_jour = new ArrayAdapter<String>(Theatre.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.days));
+        ArrayAdapter<String> adpater_mois = new ArrayAdapter<String>(Theatre.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.months));
+        ArrayAdapter<String> adpater_annee = new ArrayAdapter<String>(Theatre.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.years));
+
     }
 }

@@ -17,7 +17,7 @@
     android:layout_marginTop="25dp"
     />
 <Spinner
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/theatre_spin1"
     app:layout_constraintTop_toBottomOf="@+id/champ1"
@@ -26,18 +26,52 @@
     android:layout_marginTop="30dp"
     />
     <Spinner
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/theatre_spin2"
         app:layout_constraintTop_toBottomOf="@+id/theatre_spin1"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="30dp"
+
         >
 
 </Spinner>
+<Spinner
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/jour"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/theatre_spin2"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="50dp"
+    >
 
+</Spinner>
 
+    <Spinner
+        android:id="@+id/mois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintLeft_toRightOf="@id/jour"
+        app:layout_constraintTop_toBottomOf="@id/theatre_spin2">
 
+    </Spinner>
 
+    <Spinner
+        android:id="@+id/annee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="50dp"
+
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@id/mois"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/theatre_spin2">
+
+    </Spinner>
 </android.support.constraint.ConstraintLayout>
