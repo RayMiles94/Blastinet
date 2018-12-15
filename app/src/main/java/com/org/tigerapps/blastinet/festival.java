@@ -17,7 +17,7 @@ public class festival extends AppCompatActivity {
         sp1.setAdapter(adpater1);
 
         Spinner sp2 = (Spinner) findViewById(R.id.spin2);
-        ArrayAdapter<String> adpater2 = new ArrayAdapter<String>(festival.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.spin1));
+        ArrayAdapter<String> adpater2 = new ArrayAdapter<String>(festival.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.spin2));
         adpater2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
     }
 }
