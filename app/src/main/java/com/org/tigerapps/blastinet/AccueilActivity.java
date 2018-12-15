@@ -73,8 +73,9 @@ public class AccueilActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.Acuiel) {
-
+        if (id == R.id.Accueil) {
+            Intent intent = new Intent(this, AccueilActivity.class);
+            startActivity(intent);
         } else if (id == R.id.concert) {
 
         } else if (id == R.id.festivales) {
