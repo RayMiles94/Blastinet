@@ -33,10 +33,6 @@
         android:layout_width="426dp"
         android:layout_height="wrap_content"
         />
-    <Spinner
-        android:id="@+id/spin3"
-        android:layout_width="426dp"
-        android:layout_height="wrap_content"
-        />
+
 
 </LinearLayout>

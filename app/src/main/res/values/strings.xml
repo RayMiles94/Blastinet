@@ -37,4 +37,29 @@
     <string name="note_your_password_will_be_generated_automatically_and_sent_to_your_email_address">Note: Your password will be generated automatically and sent to your email address.</string>
     <string name="festival">festival</string>
     <string name="hello">hello</string>
+
+    <string-array name="spin1">
+        <item>All Categories</item>
+        <item>Business</item>
+        <item> Concert</item>
+        <item> Formation</item>
+        <item> Arts </item>
+        <item> Sport </item>
+        <item> Theatre </item>
+        <item> festival </item>
+
+    </string-array>
+    <string-array name="spin2">
+        <item>Tout le Temps</item>
+        <item>Aujourd-hui</item>
+        <item>Demain</item>
+        <item>Cette semaine</item>
+        <item>SportCette fin de semaine </item>
+        <item> prochaine semaine </item>
+        <item>Le mois prochain</item>
+        <item>Événements à venir</item>
+
+    </string-array>
 </resources>
+
+
