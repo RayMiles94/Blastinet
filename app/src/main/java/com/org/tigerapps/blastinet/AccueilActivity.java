@@ -9,6 +9,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
+
+import java.util.Calendar;
 
 public class AccueilActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -71,17 +74,32 @@ public class AccueilActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.Acuiel) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.concert) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.festivales) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.threatre) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.Sport) {
 
+        } else if (id == R.id.Clendier) {
+            Intent intent = new Intent(this, Calendar.class);
+            startActivity(intent);
+        } else if (id==R.id.Clendier){
+            Intent intent = new Intent(this,CreateAccount.class);
+            startActivity(intent);
+        } else if(id==R.id.Contact){
+            Intent intent = new Intent(this, Contact.class);
+            startActivity(intent);
+        }
+        else if(id==R.id.login){
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+        }
+        else if(id==R.id.Create){
+            Intent intent = new Intent(this, CreateAccount.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
