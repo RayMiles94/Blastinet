@@ -20,8 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="nom de evenement"
-        android:inputType="textPersonName"/>
+        android:hint="@string/nom_de_evenement"
+        android:inputType="textPersonName"
+        android:autofillHints=""/>
 
     <Spinner
         android:id="@+id/spin1"
@@ -39,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
-        android:text="trouver un evenement"
+        android:text="@string/trouver_un_evenement"
         android:textColor="@color/colorPrimaryDark"/>
 
 
