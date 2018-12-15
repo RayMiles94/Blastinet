@@ -35,4 +35,6 @@
     <string name="last_name">LAST NAME</string>
     <string name="register">Register</string>
     <string name="note_your_password_will_be_generated_automatically_and_sent_to_your_email_address">Note: Your password will be generated automatically and sent to your email address.</string>
+    <string name="festival">festival</string>
+    <string name="hello">hello</string>
 </resources>
