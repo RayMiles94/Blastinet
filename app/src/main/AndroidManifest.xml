@@ -40,10 +40,6 @@
             android:name=".CreateAccount"
             android:label="@string/title_activity_create_account">
         </activity>
-        <activity
-            android:name=".Concerts"
-            android:label="@string/title_activity_concerts">
-        </activity>
         <activity android:name=".concert">
         </activity>
     </application>
