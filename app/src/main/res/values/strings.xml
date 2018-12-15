@@ -62,6 +62,31 @@
         <item>Événements à venir</item>
 
     </string-array>
-</resources>
+    
+    <string-array name="array_theatre1">
+        <item>All Categories</item>
+        <item>Buisness</item>
+        <item>Concert</item>
+        <item>Formation</item>
+        <item>Arts</item>
+        <item>Sport</item>
+        <item>Theatre</item>
+        <item>Festival</item>
+    </string-array>
+        <string-array name="array_theatre2">
+        <item>Tout le temps</item>
+        <item>Aujourdhui</item>
+        <item>Demain</item>
+        <item>Cette semaine</item>
+        <item>Cette fin de semain</item>
+        <item>prochaine semaine</item>
+        <item>Le mois prochain</item>
+        <item>Evenements à venir</item>
+    </string-array>
+
+
+
+
+    </resources>
 
 

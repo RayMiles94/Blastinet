@@ -82,7 +82,8 @@ public class AccueilActivity extends AppCompatActivity
             Intent intent = new Intent(this, festival.class);
             startActivity(intent);
         } else if (id == R.id.threatre) {
-
+            Intent intent = new Intent(this, Theatre    .class);
+            startActivity(intent);
         } else if (id == R.id.Sport) {
 
         } else if (id == R.id.Clendier) {
