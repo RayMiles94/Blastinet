@@ -39,19 +39,16 @@
             android:icon="@drawable/ic_menu_manage"
             android:title="Contact"
             />
+        <item
+            android:id="@+id/login"
+            android:icon="@drawable/ic_menu_share"
+            android:title="LOGIN"/>
+        <item
+            android:id="@+id/Create"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Create Account"/>
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
 
-                android:icon="@drawable/ic_menu_share"
-                android:title="LOGIN"/>
-            <item
-
-                android:icon="@drawable/ic_menu_send"
-                android:title="Create Account"/>
-        </menu>
-    </item>
 
 </menu>
