@@ -12,7 +12,7 @@ import android.view.MenuItem;
 
 public class AccueilActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+        String test ="this was created b Haythem";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
