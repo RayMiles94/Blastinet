@@ -5,34 +5,37 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/Acuiel"
             android:icon="@drawable/ic_menu_camera"
             android:title="Acuiel"/>
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="contacts"/>
+            android:id="@+id/concert"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="concert"
+            />
+
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/festivales"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="festivales"/>
         <item
-            android:id="@+id/nav_share"
+            android:id="@+id/threatre"
             android:icon="@drawable/ic_menu_manage"
             android:title="threatre"/>
 
         <item
-            android:id="@+id/nav_send"
+            android:id="@+id/Sport"
             android:icon="@drawable/ic_menu_manage"
             android:title="Sport"
             />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/Clendier"
             android:icon="@drawable/ic_menu_manage"
             android:title="Clendier"
             />
-        <item
 
+        <item
+            android:id="@+id/Contact"
             android:icon="@drawable/ic_menu_manage"
             android:title="Contact"
             />
