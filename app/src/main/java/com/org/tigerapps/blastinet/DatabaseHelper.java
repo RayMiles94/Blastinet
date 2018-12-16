@@ -71,7 +71,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         +comment_type + " comment_type String"
         +comment_parent + " comment_parent INT"
         +user_id + " user_id int );";
-
+        db.execSQL(q);
     }
 
     @Override
