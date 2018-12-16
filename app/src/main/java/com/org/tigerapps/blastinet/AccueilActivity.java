@@ -18,7 +18,7 @@ import java.util.Calendar;
 public class AccueilActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
         String test ="this was created b Haythem";
-        //DatabaseHelper myDB;
+        DatabaseHelper myDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class AccueilActivity extends AppCompatActivity
 
 
         //traitement base de donnees commence
-        /*myDB = new DatabaseHelper(this);
+        myDB = new DatabaseHelper(this);
 
             boolean t = myDB.insertData("colonne1","colonne2","colonne3");
                 if (t)
