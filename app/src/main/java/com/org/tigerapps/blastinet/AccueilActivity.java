@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -34,7 +35,7 @@ public class AccueilActivity extends AppCompatActivity
                 if (t)
                     Toast.makeText(AccueilActivity.this,"Data Inserted ",Toast.LENGTH_SHORT).show();
                 else
-                    Toast.makeText(AccueilActivity.this,"Erreur Insertion ",Toast.LENGTH_SHORT).show();*/
+                    Toast.makeText(AccueilActivity.this,"Erreur Insertion ",Toast.LENGTH_SHORT).show();
 /*
         Cursor res = myDB.getAlldata();
             StringBuffer buffer = new StringBuffer();
