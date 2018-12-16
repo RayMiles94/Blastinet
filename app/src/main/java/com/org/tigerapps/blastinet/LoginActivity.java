@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
             login = findViewById(R.id.loginsign);
             password = findViewById(R.id.pwlogin);
-            loginbtc = (Button) findViewById(R.id.loginb);
+           // loginbtc = (Button) findViewById(R.id.loginb);
         }
 
         public void onlogin(View v){

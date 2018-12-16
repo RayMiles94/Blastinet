@@ -29,9 +29,6 @@
     <string name="contact_us">Contact Us</string>
     <string name="button">Button</string>
     <string name="calendier">Calendier</string>
-    <string name="first_name">First Name</string>
-    <string name="register_user">Register User</string>
-    <string name="e_mail">E-MAIL</string>
     <string name="last_name">LAST NAME</string>
     <string name="register">Register</string>
     <string name="note_your_password_will_be_generated_automatically_and_sent_to_your_email_address">Note: Your password will be generated automatically and sent to your email address.</string>
@@ -56,12 +53,9 @@
     <string name="name">Name</string>
     <string name="register_user">Register User</string>
     <string name="e_mail">E-MAIL</string>
-    <string name="first_name">First Name</string>
     <string name="last_nam">Last Name</string>
     <string name="register1">REGISTER</string>
-    <string name="remember_me">Remember Me</string>
     <string name="sign_in">Sign In</string>
-    <string name="remember_me">Remember Me</string>
     <string name="sign_in2">SiGN IN</string>
 
     <string-array name="spin1">
