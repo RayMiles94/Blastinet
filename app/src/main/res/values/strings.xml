@@ -60,6 +60,9 @@
     <string name="last_nam">Last Name</string>
     <string name="register1">REGISTER</string>
     <string name="remember_me">Remember Me</string>
+    <string name="sign_in">Sign In</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="sign_in2">SiGN IN</string>
 
     <string-array name="spin1">
         <item>All Categories</item>
