@@ -50,6 +50,9 @@
     <string name="your_message">Your Message</string>
     <string name="title_contact">TextView</string>
     <string name="title">TextView</string>
+    <string name="feedbacktitle">login</string>
+    <string name="feedbackname2">Name</string>
+    <string name="feedbackemail">Mail</string>
 
     <string-array name="spin1">
         <item>All Categories</item>
