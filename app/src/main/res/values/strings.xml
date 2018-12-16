@@ -44,6 +44,12 @@
     <string name="string_r_servez_blastek_maintenant"/>
     <string name="cherche_un_evenement">cherche un evenement</string>
     <string name="chercher">Chercher</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_e_mail">Your E-Mail</string>
+    <string name="your_subject">Your Subject</string>
+    <string name="your_message">Your Message</string>
+    <string name="title_contact">TextView</string>
+    <string name="title">TextView</string>
 
     <string-array name="spin1">
         <item>All Categories</item>
