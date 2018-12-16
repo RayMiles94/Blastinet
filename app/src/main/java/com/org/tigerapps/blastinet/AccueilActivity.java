@@ -1,6 +1,7 @@
 package com.org.tigerapps.blastinet;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -9,8 +10,14 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Calendar;
@@ -19,7 +26,7 @@ public class AccueilActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
         String test ="this was created b Haythem";
         DatabaseHelper myDB;
-
+TextView recherche;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +36,7 @@ public class AccueilActivity extends AppCompatActivity
 
 
         //traitement base de donnees commence
-        myDB = new DatabaseHelper(this);
+        /*myDB = new DatabaseHelper(this);
 
             boolean t = myDB.insertData("colonne1","colonne2","colonne3");
                 if (t)
@@ -49,8 +56,13 @@ public class AccueilActivity extends AppCompatActivity
 
 */
         //traitement base de donnees fins
+        recherche = (EditText) findViewById(R.id.chercher);
+        String rech="Chercher un evement";
+        SpannableString ss = new SpannableString(rech);
 
-
+        ForegroundColorSpan fcsWhite = new ForegroundColorSpan(Color.WHITE);
+        ss.setSpan(fcsWhite,0,18, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        recherche.setText(ss);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -115,12 +127,10 @@ public class AccueilActivity extends AppCompatActivity
             Intent intent = new Intent(this, Sport.class);
             startActivity(intent);
         } else if (id == R.id.Clendier) {
-            Intent intent = new Intent(this, Calendar.class);
+            Intent intent = new Intent(this, Calendier.class);
             startActivity(intent);
-        } else if (id==R.id.Clendier){
-            Intent intent = new Intent(this,CreateAccount.class);
-            startActivity(intent);
-        } else if(id==R.id.Contact){
+        }
+        else if(id==R.id.Contact){
             Intent intent = new Intent(this, Contact.class);
             startActivity(intent);
         }

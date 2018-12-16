@@ -7,42 +7,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
-<android.support.constraint.ConstraintLayout
+    <android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
-
+    android:background="@drawable/bgr1"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/reservez"
-        android:layout_width="230dp"
-        android:layout_height="42dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="192dp"
-        android:text="Résservez||BLASTEK||Maintenant"
-        app:layout_constraintHorizontal_bias="0.642"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-    <EditText
-        android:id="@+id/chercher"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Cherchez un evenemet"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:id="@+id/chercher"
+            android:layout_width="226dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="60dp"
+            android:textColorHighlight="@color/white"
+            android:textSize="14dp"
+            android:hint="cherrcher un evenement"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginRight="128dp"
-        android:text="Evenements à Venir"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/chercher" />
+        <TextView
+            android:id="@+id/reservez"
+            android:layout_width="230dp"
+            android:layout_height="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:text="Résservez||BLASTEK||Maintenant"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chercher" />
+
+
+
+
+
+
 
 </android.support.constraint.ConstraintLayout>
 
