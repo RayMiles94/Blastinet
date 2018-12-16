@@ -107,6 +107,14 @@
         <item>11</item>
         <item>12</item>
     </string-array>
+    <string-array name="days">
+        <item>Lundi</item>
+        <item>Mardi</item>
+        <item>Jeudi</item>
+        <item>Vendredi</item>
+        <item>Samedi</item>
+        <item>Dimanche</item>
+    </string-array>
 </resources>
 
 
