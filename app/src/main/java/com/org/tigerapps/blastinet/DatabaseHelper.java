@@ -2,6 +2,7 @@ package com.org.tigerapps.blastinet;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.support.annotation.Nullable;
@@ -23,10 +24,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String q = "(create table " + TABLE_NAME + "(ID INTEGER PRIMARY KEY AUTO INCREMENT)," + COL2 +"VARCHAR,"
 
-                +COL3 +"VARCHAR,"
-        +COL4 +"VARCHAR;";
+        String q = "(create table " + TABLE_NAME + "(ID INTEGER PRIMARY KEY ," + COL2 +"VARCHAR," +COL3 +"VARCHAR," +COL4 +"VARCHAR);";
+        db.execSQL(q);
     }
 
     @Override
@@ -35,8 +35,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
     public boolean insertData(String name,String email,String events){
+
+
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
+
+
         contentValues.put(COL2,name);
         contentValues.put(COL3,email);
         contentValues.put(COL4,events);
@@ -46,5 +50,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 return false;
             else return true;
     }
+    public Cursor getAlldata(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res =db.rawQuery("SELECT * FROM " +TABLE_NAME,null);
+        return res;
 
+
+    }
 }
