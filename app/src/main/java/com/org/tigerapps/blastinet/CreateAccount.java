@@ -26,6 +26,6 @@ public class CreateAccount extends AppCompatActivity {
 
 
     public void SaveInDB(View v){
-            
+
     }
 }
