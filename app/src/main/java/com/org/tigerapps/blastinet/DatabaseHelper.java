@@ -54,9 +54,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL( "(create table " + TABLE_CLIENT + "(ID INTEGER PRIMARY KEY AUTOINCREMENT ," + COL2 +"VARCHAR," +COL3 +"VARCHAR," +COL4 +"VARCHAR);");
-        String q = "CREATE TABLE " + TABLE_COMMENTS + " (" +
-        comment_ID + " INTEGER PRIMARY KEY AUTOINCREMENT ,"
+        db.execSQL( "create table " + TABLE_CLIENT + "(ID INTEGER PRIMARY KEY AUTOINCREMENT ," + COL2 +" VARCHAR, " +COL3 +" VARCHAR, " +COL4 +" VARCHAR);");
+       /* String q = "CREATE TABLE " + TABLE_COMMENTS + " (" +
+        comment_ID + " INT PRIMARY KEY AUTOINCREMENT ,"
         +comment_post_ID + " comment_author VARCHAR , " +
         comment_author_email + " comment_author_email VARCHAR , "
         +comment_author_url + " comment_author_url VARCHAR,"
@@ -71,7 +71,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         +comment_type + " comment_type String"
         +comment_parent + " comment_parent INT"
         +user_id + " user_id int );";
-        db.execSQL(q);
+        db.execSQL(q); */
     }
 
     @Override
