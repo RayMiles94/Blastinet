@@ -21,6 +21,21 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello"/>
+        android:text="@string/string_r_servez_blastek_maintenant"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/cherche_un_evenement"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chercher"/>
 </LinearLayout>
 </ScrollView>
