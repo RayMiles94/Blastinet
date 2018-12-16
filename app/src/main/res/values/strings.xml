@@ -53,6 +53,12 @@
     <string name="feedbacktitle">login</string>
     <string name="feedbackname2">Name</string>
     <string name="feedbackemail">Mail</string>
+    <string name="name">Name</string>
+    <string name="register_user">Register User</string>
+    <string name="e_mail">E-MAIL</string>
+    <string name="first_name">First Name</string>
+    <string name="last_nam">Last Name</string>
+    <string name="register1">REGISTER</string>
 
     <string-array name="spin1">
         <item>All Categories</item>
