@@ -26,28 +26,19 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login">
-        </activity>
-        <activity
-            android:name=".Contact"
-            android:label="@string/title_activity_contact"
-            >
-        </activity>
+            android:label="@string/title_activity_login"/>
+
         <activity
             android:name=".Calendier"
-            android:label="@string/title_activity_calendier"
-            >
-        </activity>
+            android:label="@string/title_activity_calendier"/>
         <activity
             android:name=".CreateAccount"
-            android:label="@string/title_activity_create_account"
-            >
-        </activity>
-        <activity
-            android:name=".Concerts"
-            android:label="@string/title_activity_concerts"
-            >
-        </activity>
+            android:label="@string/title_activity_create_account"/>
+        <activity android:name=".concert"/>
+        <activity android:name=".festival"/>
+        <activity android:name=".Theatre"/>
+        <activity android:name=".Sport" />
+        <activity  android:name=".Contact" />
     </application>
 
 </manifest>

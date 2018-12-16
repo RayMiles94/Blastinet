@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".festival">
+
+
+    <TextView
+        android:id="@+id/sport_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Sport"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/name_event23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/nom_de_evenement"
+        android:inputType="textPersonName"
+        android:autofillHints=""/>
+
+    <Spinner
+        android:id="@+id/spin3"
+        android:layout_width="426dp"
+        android:layout_height="wrap_content"
+        />
+    <Spinner
+        android:id="@+id/spin5"
+        android:layout_width="426dp"
+        android:layout_height="wrap_content"
+        />
+
+    <Spinner
+        android:id="@+id/spin6"
+        android:layout_width="426dp"
+        android:layout_height="wrap_content"
+        />
+    <Spinner
+        android:id="@+id/spin7"
+        android:layout_width="426dp"
+        android:layout_height="wrap_content"
+        />
+    <Spinner
+        android:id="@+id/spin8"
+        android:layout_width="426dp"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/sreach_sport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/trouver_un_evenement"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+</LinearLayout>

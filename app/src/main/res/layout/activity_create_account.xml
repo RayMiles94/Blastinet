@@ -6,7 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CreateAccount">
-
+    <include
+        layout="@layout/app_bar_accueil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

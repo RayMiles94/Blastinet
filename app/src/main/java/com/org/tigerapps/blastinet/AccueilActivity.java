@@ -1,27 +1,55 @@
 package com.org.tigerapps.blastinet;
 
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
 public class AccueilActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
         String test ="this was created b Haythem";
+        DatabaseHelper myDB;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accueil);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        //traitement base de donnees commence
+        myDB = new DatabaseHelper(this);
+
+            boolean t = myDB.insertData("colonne1","colonne2","colonne3");
+                if (t)
+                    Toast.makeText(AccueilActivity.this,"Data Inserted ",Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(AccueilActivity.this,"Erreur Insertion ",Toast.LENGTH_SHORT).show();
+/*
+        Cursor res = myDB.getAlldata();
+            StringBuffer buffer = new StringBuffer();
+            while (res.moveToNext()){
+                buffer.append("Id :" + res.getInt(0)+"\n");
+                buffer.append("name :" + res.getInt(1)+"\n");
+                buffer.append("email :" + res.getInt(2)+"\n");
+                buffer.append("events :" + res.getInt(3)+"\n");
+            }
+            afficher_msg("Data",buffer.toString());
+
+*/
+        //traitement base de donnees fins
 
 
 
@@ -73,16 +101,20 @@ public class AccueilActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.Acuiel) {
-
+        if (id == R.id.Accueil) {
+            Intent intent = new Intent(this, AccueilActivity.class);
+            startActivity(intent);
         } else if (id == R.id.concert) {
 
         } else if (id == R.id.festivales) {
-
+            Intent intent = new Intent(this, festival.class);
+            startActivity(intent);
         } else if (id == R.id.threatre) {
-
+            Intent intent = new Intent(this, Theatre.class);
+            startActivity(intent);
         } else if (id == R.id.Sport) {
-
+            Intent intent = new Intent(this, Sport.class);
+            startActivity(intent);
         } else if (id == R.id.Clendier) {
             Intent intent = new Intent(this, Calendar.class);
             startActivity(intent);
@@ -105,5 +137,14 @@ public class AccueilActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+    //pour essayer affichage des donnees du bd
+    public void afficher_msg(String title,String msg){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(title);
+        builder.setMessage(msg);
+        builder.show();
     }
 }
