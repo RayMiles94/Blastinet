@@ -4,6 +4,24 @@ import java.util.Date;
 
 public class Comments {
     private int id;
+
+    public Comments(int id, long post_ID, String author, String author_email, String url, String author_ip, Date date, Date date_gmt, String content, long karma, String approved, String type, long parent, long user_id) {
+        this.id = id;
+        this.post_ID = post_ID;
+        this.author = author;
+        this.author_email = author_email;
+        this.url = url;
+        this.author_ip = author_ip;
+        this.date = date;
+        this.date_gmt = date_gmt;
+        this.content = content;
+        this.karma = karma;
+        this.approved = approved;
+        this.type = type;
+        this.parent = parent;
+        this.user_id = user_id;
+    }
+
     private long post_ID;
     private String author;
     private String author_email;
