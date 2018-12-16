@@ -14,28 +14,27 @@
 
     <TextView
         android:id="@+id/reservez"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="42dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="105dp"
+        android:layout_marginTop="192dp"
         android:text="Résservez||BLASTEK||Maintenant"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.642"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
 
     <EditText
+        android:id="@+id/chercher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/chercher"
-        android:layout_marginTop="65dp"
         android:hint="Cherchez un evenemet"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/reservez"
-        />
+        app:layout_constraintTop_toBottomOf="+@id/reservez"/>
 
 
     <TextView
@@ -45,7 +44,7 @@
         android:layout_marginRight="128dp"
         android:text="Evenements à Venir"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/chercher" />
+        app:layout_constraintTop_toBottomOf="+@id/chercher" />
 
 </android.support.constraint.ConstraintLayout>
 
