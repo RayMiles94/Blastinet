@@ -1,5 +1,6 @@
 package com.org.tigerapps.blastinet;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -18,14 +19,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public DatabaseHelper(Context context) {
         super(context,DATABASE_NAME,null,1);
-        SQLiteDatabase db = this.getWritableDatabase();
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String q = "(create table " + TABLE_NAME + "(ID INTEGER PRIMARY KEY AUTO INCREMENT ,id,name,email,events):";
-        db.execSQL(q);
+        String q = "(create table " + TABLE_NAME + "(ID INTEGER PRIMARY KEY AUTO INCREMENT)," + COL2 +"VARCHAR,"
 
+                +COL3 +"VARCHAR,"
+        +COL4 +"VARCHAR;";
     }
 
     @Override
@@ -33,4 +34,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
+    public boolean insertData(String name,String email,String events){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COL2,name);
+        contentValues.put(COL3,email);
+        contentValues.put(COL4,events);
+
+        long res = db.insert(TABLE_NAME,null,contentValues);
+            if (res == -1)
+                return false;
+            else return true;
+    }
+
 }

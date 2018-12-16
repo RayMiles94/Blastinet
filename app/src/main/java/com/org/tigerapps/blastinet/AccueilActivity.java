@@ -10,13 +10,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
 public class AccueilActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
         String test ="this was created b Haythem";
-    //DatabaseHelper myDB;
+        DatabaseHelper myDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +27,18 @@ public class AccueilActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
 
-        //testing the db
-       // myDB = new DatabaseHelper(this);
+        //traitement base de donnees commence
+        myDB = new DatabaseHelper(this);
+
+            boolean t = myDB.insertData("colonne1","colonne2","colonne3");
+                if (t)
+                    Toast.makeText(AccueilActivity.this,"Data Inserted ",Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(AccueilActivity.this,"Erreur Insertion ",Toast.LENGTH_SHORT).show();
+
+
+        //traitement base de donnees fins
+
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
