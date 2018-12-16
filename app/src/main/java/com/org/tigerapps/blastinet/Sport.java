@@ -21,7 +21,7 @@ public class Sport extends AppCompatActivity {
         ArrayAdapter<String> adpater2 = new ArrayAdapter<String>(Sport.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.years));
         adpater2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sp6.setAdapter(adpater2);
-
+        /* hhhhhh */
         Spinner sp7 = (Spinner) findViewById(R.id.spin7);
         ArrayAdapter<String> adpater3 = new ArrayAdapter<String>(Sport.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.months));
         adpater2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

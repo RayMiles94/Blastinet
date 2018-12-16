@@ -39,6 +39,17 @@
     <string name="hello">hello</string>
     <string name="nom_de_evenement">nom de evenement</string>
     <string name="trouver_un_evenement">trouver un evenement</string>
+    <string name="Sport">sport</string>
+    <string name="r_servez_blastek_maintenant">Réservez ||BLASTEK|| Maintenant</string>
+    <string name="string_r_servez_blastek_maintenant"/>
+    <string name="cherche_un_evenement">cherche un evenement</string>
+    <string name="chercher">Chercher</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_e_mail">Your E-Mail</string>
+    <string name="your_subject">Your Subject</string>
+    <string name="your_message">Your Message</string>
+    <string name="title_contact">TextView</string>
+    <string name="title">TextView</string>
 
     <string-array name="spin1">
         <item>All Categories</item>

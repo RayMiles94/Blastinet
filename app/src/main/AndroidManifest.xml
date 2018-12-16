@@ -27,9 +27,7 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"/>
-        <activity
-            android:name=".Contact"
-            android:label="@string/title_activity_contact"/>
+
         <activity
             android:name=".Calendier"
             android:label="@string/title_activity_calendier"/>
@@ -39,8 +37,8 @@
         <activity android:name=".concert"/>
         <activity android:name=".festival"/>
         <activity android:name=".Theatre"/>
-        <activity android:name=".Sport">
-        </activity>
+        <activity android:name=".Sport" />
+        <activity  android:name=".Contact" />
     </application>
 
 </manifest>
